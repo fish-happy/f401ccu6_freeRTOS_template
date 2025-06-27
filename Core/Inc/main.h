@@ -16,9 +16,9 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
+  /* USER CODE END Header */
 
-/* Define to prevent recursive inclusion -------------------------------------*/
+  /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
 #define __MAIN_H
 
@@ -26,7 +26,7 @@
 extern "C" {
 #endif
 
-/* Includes ------------------------------------------------------------------*/
+  /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 
 #include "stm32f4xx_ll_rcc.h"
@@ -81,13 +81,13 @@ extern "C" {
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
-void Error_Handler(void);
+  void Error_Handler (void);
 
-/* USER CODE BEGIN EFP */
+  /* USER CODE BEGIN EFP */
 
-/* USER CODE END EFP */
+  /* USER CODE END EFP */
 
-/* Private defines -----------------------------------------------------------*/
+  /* Private defines -----------------------------------------------------------*/
 #define sys_LED_Pin LL_GPIO_PIN_13
 #define sys_LED_GPIO_Port GPIOC
 #define white_LED_Pin LL_GPIO_PIN_8
@@ -101,9 +101,9 @@ void Error_Handler(void);
 #define SYS_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin):LL_GPIO_SetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin);
 #define WHITE_LED_SWITCH(ON_OFF) (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(white_LED_GPIO_Port, white_LED_Pin):LL_GPIO_SetOutputPin(white_LED_GPIO_Port, white_LED_Pin);
 #define GREEN_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(green_LED_GPIO_Port, green_LED_Pin):LL_GPIO_SetOutputPin(green_LED_GPIO_Port, green_LED_Pin);
-#define SYS_LED_TOGGLE(void)   LL_GPIO_TogglePin(sys_LED_GPIO_Port, sys_LED_Pin);
-#define WHITE_LED_TOGGLE(void)  LL_GPIO_TogglePin(white_LED_GPIO_Port, white_LED_Pin);
-#define GREEN_LED_TOGGLE(void)   LL_GPIO_TogglePin(green_LED_GPIO_Port, green_LED_Pin);
+#define SYS_LED_TOGGLE()   LL_GPIO_TogglePin(sys_LED_GPIO_Port, sys_LED_Pin);
+#define WHITE_LED_TOGGLE()  LL_GPIO_TogglePin(white_LED_GPIO_Port, white_LED_Pin);
+#define GREEN_LED_TOGGLE()   LL_GPIO_TogglePin(green_LED_GPIO_Port, green_LED_Pin);
 
   /* USER CODE END Private defines */
 
