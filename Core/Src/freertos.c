@@ -122,7 +122,15 @@ void StartDefaultTask (void * argument)
     printf ("system frequency=%dMHz\n" , SystemCoreClock / 1000000);
     GREEN_LED_TOGGLE ( );
     WHITE_LED_TOGGLE ( );
-    HAL_Delay (300);
+    //任务延时
+    vTaskDelay (pdMS_TO_TICKS (1000));
+
+    GREEN_LED_TOGGLE ( );
+    WHITE_LED_TOGGLE ( );
+
+    printf ("freeRTOS has been running!\r\n");
+    //删除默认任务
+    vTaskDelete (NULL);
 
 
   }
