@@ -202,6 +202,7 @@ void Error_Handler (void)
   __disable_irq ( );
   while (1)
   {
+    SYS_LED_TOGGLE ( );
   }
   /* USER CODE END Error_Handler_Debug */
 }

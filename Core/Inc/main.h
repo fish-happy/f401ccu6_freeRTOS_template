@@ -98,12 +98,12 @@ extern "C" {
 /* USER CODE BEGIN Private defines */
 
   typedef enum { OFF , ON } LED_StateTypeDef;
-#define SYS_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin):LL_GPIO_SetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin);
-#define WHITE_LED_SWITCH(ON_OFF) (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(white_LED_GPIO_Port, white_LED_Pin):LL_GPIO_SetOutputPin(white_LED_GPIO_Port, white_LED_Pin);
-#define GREEN_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(green_LED_GPIO_Port, green_LED_Pin):LL_GPIO_SetOutputPin(green_LED_GPIO_Port, green_LED_Pin);
-#define SYS_LED_TOGGLE()   LL_GPIO_TogglePin(sys_LED_GPIO_Port, sys_LED_Pin);
-#define WHITE_LED_TOGGLE()  LL_GPIO_TogglePin(white_LED_GPIO_Port, white_LED_Pin);
-#define GREEN_LED_TOGGLE()   LL_GPIO_TogglePin(green_LED_GPIO_Port, green_LED_Pin);
+#define SYS_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin):LL_GPIO_SetOutputPin(sys_LED_GPIO_Port, sys_LED_Pin)
+#define WHITE_LED_SWITCH(ON_OFF) (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(white_LED_GPIO_Port, white_LED_Pin):LL_GPIO_SetOutputPin(white_LED_GPIO_Port, white_LED_Pin)
+#define GREEN_LED_SWITCH(ON_OFF)  (LED_StateTypeDef)(ON_OFF)?LL_GPIO_ResetOutputPin(green_LED_GPIO_Port, green_LED_Pin):LL_GPIO_SetOutputPin(green_LED_GPIO_Port, green_LED_Pin)
+#define SYS_LED_TOGGLE()   LL_GPIO_TogglePin(sys_LED_GPIO_Port, sys_LED_Pin)
+#define WHITE_LED_TOGGLE()  LL_GPIO_TogglePin(white_LED_GPIO_Port, white_LED_Pin)
+#define GREEN_LED_TOGGLE()   LL_GPIO_TogglePin(green_LED_GPIO_Port, green_LED_Pin)
 
   /* USER CODE END Private defines */
 

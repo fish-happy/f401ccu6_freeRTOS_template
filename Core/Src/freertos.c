@@ -119,8 +119,7 @@ void StartDefaultTask (void * argument)
   for (;;)
   {
 
-    printf ("system frequency=%dMHz\n" , SystemCoreClock/1000000);
-    SYS_LED_TOGGLE ( );
+    printf ("system frequency=%dMHz\n" , SystemCoreClock / 1000000);
     GREEN_LED_TOGGLE ( );
     WHITE_LED_TOGGLE ( );
     HAL_Delay (300);
