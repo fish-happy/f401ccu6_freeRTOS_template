@@ -128,7 +128,7 @@ void StartDefaultTask (void * argument)
     GREEN_LED_TOGGLE ( );
     WHITE_LED_TOGGLE ( );
 
-    printf ("freeRTOS has been running!\r\n");
+    printf ("freeRTOS alredy running!\r\n");
     //删除默认任务
     vTaskDelete (NULL);
 
